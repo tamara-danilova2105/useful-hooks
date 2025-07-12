@@ -1,0 +1,44 @@
+{
+  "name": "@techlab/useful-hooks",
+  "version": "1.0.0",
+  "description": "Collection of useful React hooks by TechLab",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format esm,cjs --out-dir dist",
+    "test": "echo \"No tests yet\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tamara-danilova2105/useful-hooks"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "techlab",
+    "debounce",
+    "typescript"
+  ],
+  "author": "Tamara Danilova",
+  "contributors": [
+    "Kristina Baruleva"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tamara-danilova2105/useful-hooks/issues"
+  },
+  "homepage": "https://github.com/tamara-danilova2105/useful-hooks#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "react": "^19.1.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  }
+}
