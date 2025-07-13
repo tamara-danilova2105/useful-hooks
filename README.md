@@ -11,12 +11,12 @@
 Через npm:
 
 ```bash
-npm install @techlab/useful-hooks
+npm install @techlabteam/useful-hooks
 ```
 
 Через yarn:
 ```bash
-yarn add @techlab/useful-hooks
+yarn add @techlabteam/useful-hooks
 ```
 
 ---
