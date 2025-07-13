@@ -179,7 +179,7 @@ return (
 );
 ```
 
-### useSlide
+### `useSlide`
 
 Хук для управления текущим активным индексом в слайдере, галерее или любом компоненте с циклической навигацией.
 
@@ -206,4 +206,22 @@ return (
     <button onClick={nextImage}>→</button>
   </div>
 );
+```
+
+### `useDisableImageContextMenu`
+
+Отключает стандартное контекстное меню (правый клик) на всех изображениях (`<img>`), чтобы предотвратить их скачивание или копирование через меню браузера.
+
+#### Пример использования
+
+```tsx
+function App() {
+  useDisableImageContextMenu();
+
+  return (
+    <div>
+      <img src="/image.jpg" alt="Example" />
+    </div>
+  );
+}
 ```
