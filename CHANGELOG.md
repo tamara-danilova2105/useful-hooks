@@ -1,5 +1,11 @@
 # @techlab/useful-hooks
 
+## 1.1.1
+
+### Patch Changes
+
+- Переход на организацию techlabteam
+
 ## 1.1.0
 
 ### Minor Changes
@@ -21,4 +27,4 @@
   - `useSlider` — управление слайдером
   - `useDisableImageContextMenu` — отключает контекстное меню на изображениях
 
-  Это первая партия хуков в библиотеке `@techlab/useful-hooks`.
+  Это первая партия хуков в библиотеке `@techlabteam/useful-hooks`.
