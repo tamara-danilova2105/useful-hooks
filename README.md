@@ -103,27 +103,28 @@ const width: number = useWindowWidth()
 
 ### `useExpandableText`
 
-Хук для отображения обрезанного текста с возможностью разворачивания.
+Хук для управления отображением длинного текста с возможностью "развернуть/свернуть".  
+Полезен для карточек, описаний, отзывов и других UI, где нужно сократить объём текста.
 
 ```ts
-const { isExpanded, displayText, toggleExpanded } = useExpandableText({ text, maxLength })
-```
-пример:
+import { useExpandableText } from '@techlab/useful-hooks'
 
-```tsx
-const { isExpanded, displayText, toggleExpanded } = useExpandableText({
-  text: "Очень длинный текст, который нужно сократить...",
-  maxLength: 100
+const { displayText, isExpanded, toggleExpanded } = useExpandableText({
+  text: 'Очень длинный текст, который не помещается в блок',
+  maxLength: 30
 })
-
-return (
-  <>
-    <p>{displayText}</p>
-    <button onClick={toggleExpanded}>
-      {isExpanded ? "Скрыть" : "Читать далее"}
-    </button>
-  </>
-)
 ```
 
 Удобен для описаний, новостей, отзывов и др.
+
+### `useAutoPagination`
+
+Реагирует на изменение высоты окна и вычисляет, **сколько строк может поместиться в доступную часть экрана**.
+
+```ts
+const rowsPerPage = useAutoPagination({
+  offsetHeight: 420,
+  rowHeight: 28,
+})
+```
+

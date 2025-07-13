@@ -5,3 +5,4 @@ export * from './useLocalStorage';
 export * from './useOverflowHidden';
 export * from './useWindowWidth';
 export * from './useExpandableText';
+export * from './useAutoPagination'

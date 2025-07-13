@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
 
+/**
+ * useWindowWidth — отслеживает ширину окна и обновляет значение при ресайзе.
+ *
+ * @returns Текущее значение window.innerWidth
+ */
 export const useWindowWidth = () => {
     const [width, setWidth] = useState(window.innerWidth);
 

@@ -8,7 +8,17 @@ type UseModalReturn = [
     boolean
 ];
 
-export const useModal = (isMobile?: boolean): UseModalReturn => {
+/**
+ * useModal — управляет отображением модального окна с поддержкой блокировки скролла.
+ *
+ * @returns [
+ *   toggleModal — функция открытия/закрытия модалки (можно передать modalType),
+ *   renderModal — функция-рендер модалки, если она активна,
+ *   isOpen — булево состояние модалки
+ * ]
+ */
+
+export const useModal = (): UseModalReturn => {
     const [isOpen, setIsOpen] = useState(false);
     const [currentModal, setCurrentModal] = useState<string | null>(null);
     useOverflowHidden(isOpen);
