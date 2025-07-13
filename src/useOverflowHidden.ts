@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 
 /**
- * useOverflowHidden — блокирует прокрутку body при открытии модалки или другого элемента.
+ * useOverflowHidden блокирует прокрутку body при открытии модалки или другого элемента.
  *
- * @param isOpen Если true — устанавливает overflow: hidden, иначе убирает
+ * @param isOpen Если true устанавливает overflow: hidden, иначе убирает
  */
 export const useOverflowHidden = (isOpen: boolean) => {
     useEffect(() => {

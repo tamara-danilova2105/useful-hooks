@@ -1,7 +1,7 @@
 import { useEffect, RefObject } from 'react';
 
 /**
- * useOnClickOutside — вызывает callback при клике вне указанного элемента.
+ * useOnClickOutside вызывает callback при клике вне указанного элемента.
  *
  * @param ref Ссылка на элемент, за пределами которого должен сработать клик
  * @param callback Функция, вызываемая при клике вне элемента

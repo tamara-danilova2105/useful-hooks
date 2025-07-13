@@ -2,7 +2,7 @@ import { useSearchParams } from 'react-router-dom';
 import { useMemo } from 'react';
 
 /**
- * useQueryParam — хук для чтения и обновления query-параметров в URL.
+ * useQueryParam - хук для чтения и обновления query-параметров в URL.
  *
  * @template T Тип значения параметра (по умолчанию string)
  * @param key Название параметра в строке запроса

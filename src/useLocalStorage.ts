@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 /**
- * useLocalStorage — синхронизирует значение с localStorage.
+ * useLocalStorage синхронизирует значение с localStorage.
  * @param key Ключ в localStorage
  * @param initialValue Значение по умолчанию
  * @returns [value, setValue]

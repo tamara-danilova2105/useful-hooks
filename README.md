@@ -34,6 +34,8 @@ const debounced = useDebounce(inputValue, 300)
 
 Хук для обработки клика вне переданного DOM-элемента (например, чтобы закрыть модалку или меню).
 
+#### Пример использования
+
 ```tsx
 import { useRef } from 'react'
 import { useOnClickOutside } from '@techlab/useful-hooks'
@@ -57,6 +59,8 @@ function Modal({ onClose }: { onClose: () => void }) {
 1. Функцию `toggleModal` для открытия/закрытия;
 2. Функцию `renderModal(children)` — обёртку для отрисовки;
 3. Состояние `isOpen`.
+
+#### Пример использования
 
 ```tsx
 import { useModal } from '@techlab/useful-hooks'
@@ -128,15 +132,49 @@ const rowsPerPage = useAutoPagination({
 })
 ```
 
-## useQueryParam
+### `useQueryParam`
 
 Хук для работы с query-параметрами URL. Позволяет легко читать и обновлять параметры строки запроса.
 
-### Пример использования
+#### Пример использования
 
 ```tsx
 const [tab, setTab] = useQueryParam('tab', 'overview');
 
 // tab → "overview" (или значение из URL)
 setTab('reviews'); // Обновит параметр ?tab=reviews в адресной строке
+```
+
+## useScrollToTop
+
+Прокручивает страницу наверх при изменении маршрута (`pathname`), например, при переходе между страницами.
+
+### Пример использования
+
+```tsx
+function AppLayout() {
+  useScrollToTop();
+
+  return <Outlet />;
+}
+```
+
+### `useShownOnScroll`
+
+Показывает элемент (например, кнопку «наверх»), если пользователь прокрутил страницу ниже определённого порога.
+
+#### Пример использования
+
+```tsx
+const { isShow, handleScrollUp } = useShownOnScroll();
+
+return (
+  <>
+    {isShow && (
+      <button onClick={handleScrollUp} className="to-top">
+        ⬆️ Наверх
+      </button>
+    )}
+  </>
+);
 ```
