@@ -1,5 +1,11 @@
 # @techlab/useful-hooks
 
+## 1.1.2
+
+### Patch Changes
+
+- отредактировано README.md
+
 ## 1.1.1
 
 ### Patch Changes

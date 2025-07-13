@@ -1,6 +1,6 @@
 {
   "name": "@techlabteam/useful-hooks",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Collection of useful React hooks by TechLab",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
