@@ -9,3 +9,4 @@ export * from './useAutoPagination';
 export * from './useQueryParam';
 export * from './useScrollToTop';
 export * from './useScrollToTopButton';
+export * from './useSlider';

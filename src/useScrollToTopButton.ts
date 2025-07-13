@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
 /**
- * useShownOnScroll — показывает элемент (например, кнопку «наверх»), если пользователь прокрутил страницу.
+ * useShownOnScroll показывает элемент (например, кнопку «наверх»), если пользователь прокрутил страницу.
  *
  * @returns Объект:
- *  - isShow: boolean — флаг, нужно ли показывать элемент
- *  - handleScrollUp: () => void — функция плавной прокрутки страницы наверх
+ *  - isShow: boolean - флаг, нужно ли показывать элемент
+ *  - handleScrollUp: () => void - функция плавной прокрутки страницы наверх
  *
  * @example
  * const { isShow, handleScrollUp } = useShownOnScroll();
