@@ -1,5 +1,11 @@
 # @techlab/useful-hooks
 
+## 1.1.3
+
+### Patch Changes
+
+- Добавлена поддержка react-router-dom 7.0.0
+
 ## 1.1.2
 
 ### Patch Changes
