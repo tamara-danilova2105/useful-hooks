@@ -12,3 +12,4 @@ export * from './useScrollToTopButton';
 export * from './useSlider';
 export * from './useDisableImageContextMenu';
 export * from './useHover';
+export * from './useResize';

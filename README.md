@@ -38,3 +38,4 @@ yarn add @techlabteam/useful-hooks
 - [`useDisableImageContextMenu`](./docs/useDisableImageContextMenu.md) - отключает стандартное контекстное меню
 - [`useClickOutside`](./docs/useClickOutside.md) - обработка кликов вне элемента
 - [`useHover`](./docs/useHover.md) - отслеживание наведения мыши на элемент
+- [`useResize`](./docs/useResize.md) - возвращает текущую ширину окна браузера и обновляет значение при ресайзе
