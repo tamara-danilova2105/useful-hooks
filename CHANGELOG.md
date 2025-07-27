@@ -1,5 +1,11 @@
 # @techlab/useful-hooks
 
+## 1.1.4
+
+### Patch Changes
+
+- 8e101d1: добавлен хук useResize для отслеживания ширины экрана браузера
+
 ## 1.1.3
 
 ### Patch Changes
